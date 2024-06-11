@@ -20,7 +20,6 @@ public class Coin : MonoBehaviour
             Destroy(gameObject);
             Score.totalScore++;
             _text.text = Score.totalScore.ToString();
-            
         }
     }
 }
