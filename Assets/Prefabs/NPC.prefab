@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7470445854526453393}
   - component: {fileID: 2875417235195593442}
   - component: {fileID: 2387144949734280996}
-  - component: {fileID: 4575175025160029678}
+  - component: {fileID: 2599429570275305651}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1595187001
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: db711277727951a4383f375ccbe7fb9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -141,7 +141,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.86712676, y: 0.137851}
+  m_Offset: {x: -1.0389452, y: 0.137851}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -152,7 +152,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.2642536, y: 1.7457018}
+  m_Size: {x: 3.5040913, y: 1.7457018}
   m_EdgeRadius: 0
 --- !u!70 &2387144949734280996
 CapsuleCollider2D:
@@ -189,7 +189,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.53, y: 1.47}
   m_Direction: 0
---- !u!114 &4575175025160029678
+--- !u!114 &2599429570275305651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,9 +204,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogue:
-  - AAAAAAAA
-  - deneme
-  - "yav\u015Fak"
-  contButton: {fileID: 0}
+  - Once upon a time...
+  - This cave was full with candy!
+  - Until Hansel and Gretel ate it all.
+  - I hate children!!!
   wordSpeed: 0.05
   playerIsClose: 0
