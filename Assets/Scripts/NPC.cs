@@ -10,8 +10,9 @@ public class NPC : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public string[] dialogue;
     private int _index;
+    private bool _canSkip = false;
+    private Coroutine typingCoroutine;
 
-    public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
 
@@ -20,31 +21,32 @@ public class NPC : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
-            if (dialoguePanel.activeInHierarchy)
+            if (dialoguePanel.activeInHierarchy && _canSkip)
             {
-                zeroText();
-            } else
+                NextLine();
+            }
+            else if (!dialoguePanel.activeInHierarchy)
             {
                 dialoguePanel.SetActive(true);
-                StartCoroutine(Typing());
+                typingCoroutine = StartCoroutine(Typing());
             }
         }
 
         if (dialogueText.text == dialogue[_index])
         {
-            contButton.SetActive(true);
+            _canSkip = true;
         }
     }
 
     public void zeroText()
     {
         dialogueText.text = "";
-        _index = 0;
         dialoguePanel.SetActive(false);
     }
 
     IEnumerator Typing()
     {
+        dialogueText.text = "";
         foreach (char letter in dialogue[_index].ToCharArray())
         {
             dialogueText.text += letter;
@@ -54,16 +56,21 @@ public class NPC : MonoBehaviour
 
     public void NextLine()
     {
-
-        contButton.SetActive(false);
+        _canSkip = false;
         if (_index < dialogue.Length - 1)
         {
             _index++;
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+            }
             dialogueText.text = "";
-            StartCoroutine(Typing());
-        } else
+            typingCoroutine = StartCoroutine(Typing());
+        }
+        else
         {
             zeroText();
+            _index = 0;
         }
     }
 
@@ -74,13 +81,17 @@ public class NPC : MonoBehaviour
             playerIsClose = true;
         }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             playerIsClose = false;
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+            }
             zeroText();
         }
     }
-
 }

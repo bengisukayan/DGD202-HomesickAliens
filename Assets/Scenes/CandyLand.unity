@@ -474,6 +474,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &325803460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4579971013046377601, guid: e72c60623fc57284e8614406c16720bc, type: 3}
+  m_PrefabInstance: {fileID: 765226844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &385125984 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5676974066580920416, guid: 68d98207b71eda1458f36a619f2fd735, type: 3}
@@ -676,17 +681,27 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &497301520 stripped
+--- !u!114 &497301526
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4575175025160029678, guid: e72c60623fc57284e8614406c16720bc, type: 3}
-  m_PrefabInstance: {fileID: 765226844}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 325803460}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e63af49f3ab9c9548a5450514c4e4fe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1379415038}
+  dialogueText: {fileID: 321467947}
+  dialogue:
+  - Once upon a time...
+  - This cave was full with candy!
+  - Until Hansel and Gretel ate it all.
+  - I hate children!!!
+  wordSpeed: 0.05
+  playerIsClose: 0
 --- !u!1 &611760124
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +890,7 @@ PrefabInstance:
     - target: {fileID: 4575175025160029678, guid: e72c60623fc57284e8614406c16720bc, type: 3}
       propertyPath: contButton
       value: 
-      objectReference: {fileID: 852284523}
+      objectReference: {fileID: 0}
     - target: {fileID: 4575175025160029678, guid: e72c60623fc57284e8614406c16720bc, type: 3}
       propertyPath: dialogueText
       value: 
@@ -908,10 +923,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4575175025160029678, guid: e72c60623fc57284e8614406c16720bc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4579971013046377601, guid: e72c60623fc57284e8614406c16720bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 497301526}
   m_SourcePrefab: {fileID: 100100000, guid: e72c60623fc57284e8614406c16720bc, type: 3}
 --- !u!1001 &810515598
 PrefabInstance:
@@ -1040,11 +1059,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88c2c2a8d00bfb348995202af323a158, type: 3}
---- !u!1 &852284523 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6495962130213465918, guid: 0a6197d3049ce004c9ca9e1538eb61cb, type: 3}
-  m_PrefabInstance: {fileID: 947995727}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &875966987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5676974066580920416, guid: 68d98207b71eda1458f36a619f2fd735, type: 3}
@@ -1227,7 +1241,7 @@ PrefabInstance:
     - target: {fileID: 6896624440028156981, guid: 0a6197d3049ce004c9ca9e1538eb61cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 497301520}
+      objectReference: {fileID: 0}
     - target: {fileID: 6896624440028156981, guid: 0a6197d3049ce004c9ca9e1538eb61cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextLine
@@ -1268,8 +1282,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7782009099325200173, guid: 0a6197d3049ce004c9ca9e1538eb61cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6495962130213465918, guid: 0a6197d3049ce004c9ca9e1538eb61cb, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6197d3049ce004c9ca9e1538eb61cb, type: 3}
