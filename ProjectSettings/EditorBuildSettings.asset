@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Base.unity
     guid: 554a3240593049b4f8b51cda51c19d0f
   - enabled: 1
+    path: Assets/Scenes/Mushroom.unity
+    guid: a3f10f12b0e7e3947918e44934787db7
+  - enabled: 1
     path: Assets/Scenes/CandyLand.unity
     guid: 8cdd9e204b476564c89ace745ed0c8fa
   - enabled: 0
