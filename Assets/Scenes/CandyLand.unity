@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1450897406}
     m_Modifications:
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4415662948449923354, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
       propertyPath: m_SortingLayer
       value: 4
@@ -492,6 +496,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1450897406}
     m_Modifications:
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4415662948449923354, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
       propertyPath: m_SortingLayer
       value: 4
@@ -761,6 +769,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1450897406}
     m_Modifications:
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4415662948449923354, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
       propertyPath: m_SortingLayer
       value: 4
@@ -940,6 +952,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1450897406}
     m_Modifications:
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Size.x
+      value: 2.121152
+      objectReference: {fileID: 0}
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.71057606
+      objectReference: {fileID: 0}
     - target: {fileID: 4415662948449923354, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
       propertyPath: m_SortingLayer
       value: 4
@@ -7645,6 +7665,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1450897406}
     m_Modifications:
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4415662948449923354, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
       propertyPath: m_SortingLayer
       value: 4
@@ -7882,6 +7910,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1450897406}
     m_Modifications:
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Size.x
+      value: 2.1042047
+      objectReference: {fileID: 0}
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00000023841858
+      objectReference: {fileID: 0}
     - target: {fileID: 4415662948449923354, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
       propertyPath: m_SortingLayer
       value: 4
@@ -8013,6 +8049,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1450897406}
     m_Modifications:
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4415662948449923354, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
       propertyPath: m_SortingLayer
       value: 4
@@ -8987,6 +9027,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1450897406}
     m_Modifications:
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Size.x
+      value: 1.4370152
+      objectReference: {fileID: 0}
+    - target: {fileID: 3366505434486237135, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.36850756
+      objectReference: {fileID: 0}
     - target: {fileID: 4415662948449923354, guid: a2e58ce0a02f9d14b8598d5241577427, type: 3}
       propertyPath: m_SortingLayer
       value: 4
