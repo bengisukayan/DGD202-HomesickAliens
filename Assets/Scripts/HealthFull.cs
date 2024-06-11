@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HealthFull : MonoBehaviour
 {
+    [SerializeField] private AudioSource _audio;
     private void Awake()
     {
         switch(Score.lives)

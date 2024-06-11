@@ -6,6 +6,7 @@ public class characterController : MonoBehaviour
 {
     public float jumpForce = 4.0f;
     public float speed = 1.0f;
+    public AudioSource audio;
     private float direction;
 
     private bool _jump;
@@ -17,6 +18,10 @@ public class characterController : MonoBehaviour
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        if (Score.lives != 3)
+        {
+            audio.Play();
+        }
     }
 
     private void Start()
@@ -75,7 +80,5 @@ public class characterController : MonoBehaviour
             _animator.SetBool("grounded", true);
         }
     }
-
-
 
 }

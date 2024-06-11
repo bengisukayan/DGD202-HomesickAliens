@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -12,12 +13,11 @@ public class Enemy : MonoBehaviour
     private Transform _currentPoint;
     private SpriteRenderer _spriteRenderer;
 
-    void Start()
+    private void Start()
     {
         _rigidBody = GetComponent<Rigidbody2D>();
         _currentPoint = pointB.transform;
         _spriteRenderer = GetComponent<SpriteRenderer>();
-
     }
 
     void Update()
