@@ -21,7 +21,7 @@ public class NextLevel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && Score.currentMoney == 1)
+        if (collision.gameObject.CompareTag("Player") && Score.currentMoney == 5)
         {
             StartLevel();
         }
