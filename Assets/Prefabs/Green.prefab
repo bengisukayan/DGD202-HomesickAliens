@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 4
   speed: 2
-  audio: {fileID: 2614821401903330711}
+  my_audio: {fileID: 2614821401903330711}
 --- !u!82 &2614821401903330711
 AudioSource:
   m_ObjectHideFlags: 0
