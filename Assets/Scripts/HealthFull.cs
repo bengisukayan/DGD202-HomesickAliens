@@ -20,7 +20,7 @@ public class HealthFull : MonoBehaviour
                 gameObject.transform.GetChild(1).gameObject.SetActive(false);
                 break;
             case 0:
-                SceneManager.LoadScene("gameover");
+                SceneManager.LoadScene("GameOver");
                 break;
             default:
                 break;

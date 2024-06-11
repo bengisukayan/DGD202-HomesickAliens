@@ -16,7 +16,7 @@ public class Obstacle : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Score.lives--;
-            Score.totalScore = 0;
+            Score.currentMoney = 0;
             SceneManager.LoadScene(_scene.name);
         }
     }

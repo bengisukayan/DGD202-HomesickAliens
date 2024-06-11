@@ -5,26 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
-    private Scene _scene;
-
-    private void Awake()
-    {
-        _scene = SceneManager.GetActiveScene();
-    }
-
     public void Play()
     {
-        SceneManager.LoadScene(_scene.buildIndex + 1);
+        SceneManager.LoadScene("Start");
     }
 
     public void Credits()
     {
-        SceneManager.LoadScene(_scene.buildIndex - 1);
+        SceneManager.LoadScene("Credits");
     }
 
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void Title()
+    {
+        SceneManager.LoadScene("Main");
     }
 
 }

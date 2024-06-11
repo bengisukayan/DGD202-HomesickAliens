@@ -10,7 +10,7 @@ public class Coin : MonoBehaviour
 
     private void Awake()
     {
-        _text.text = Score.totalScore.ToString();
+        _text.text = Score.currentMoney.ToString();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,8 +19,7 @@ public class Coin : MonoBehaviour
             _audio.Play();
             Destroy(gameObject);
             Score.currentMoney++;
-            Score.totalScore++;
-            _text.text = Score.totalScore.ToString();
+            _text.text = Score.currentMoney.ToString();
         }
     }
 }
