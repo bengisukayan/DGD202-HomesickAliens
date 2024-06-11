@@ -11,29 +11,19 @@ public class NextLevel : MonoBehaviour
     private void Awake()
     {
         _scene = SceneManager.GetActiveScene();
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose && Score.totalScore == 5)
-        {
-            StartLevel();
-        }
     }
 
     public void StartLevel()
     {
+        Score.currentMoney = 0;
         SceneManager.LoadScene(_scene.buildIndex + 1);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && Score.currentMoney == 1)
         {
-            playerIsClose = true;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            playerIsClose = false;
+            StartLevel();
         }
     }
 }

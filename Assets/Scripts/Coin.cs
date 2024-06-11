@@ -18,6 +18,7 @@ public class Coin : MonoBehaviour
         {
             _audio.Play();
             Destroy(gameObject);
+            Score.currentMoney++;
             Score.totalScore++;
             _text.text = Score.totalScore.ToString();
         }
