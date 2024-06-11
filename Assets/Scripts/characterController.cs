@@ -6,7 +6,7 @@ public class characterController : MonoBehaviour
 {
     public float jumpForce = 4.0f;
     public float speed = 1.0f;
-    public AudioSource audio;
+    public AudioSource my_audio;
     private float direction;
 
     private bool _jump;
@@ -20,7 +20,7 @@ public class characterController : MonoBehaviour
         _animator = GetComponent<Animator>();
         if (Score.lives != 3)
         {
-            audio.Play();
+            my_audio.Play();
         }
     }
 

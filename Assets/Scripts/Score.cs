@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    public static bool key_gathered = false;
     public static int totalScore=0;
     public static int lives=3;
 }
