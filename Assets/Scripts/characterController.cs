@@ -42,7 +42,7 @@ public class characterController : MonoBehaviour
 
     private void Update()
     {
-        if (_grounded && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
             if (Input.GetKey(KeyCode.A))
             {
